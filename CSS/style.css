@@ -36,6 +36,17 @@ img{
 .container {
     width: 80%;
 }
+.section-head {
+     font-weight: 900;
+     font-size: 40px;
+     position: relative;
+     display: inline-block;
+ }
+ .section-head::after{
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+ }
 /*Starting NavBar*/
 .navbar .container .logo {
     font-weight: 800;
@@ -174,3 +185,26 @@ img{
     color: white;
     border:2px solid #1c1c1c;
 }
+/*end of about section*/
+
+/*start our services section*/
+ .icon-container {
+     width: 120px;
+     height: 120px;
+     border: #0078ff solid 9px;
+
+     transition: border-color 0.5s ease;
+ }
+
+ .icon-container i {
+     transition: border-color 0.5s ease;
+ }
+
+ .sowarkolha:hover .icon-container {
+     border-color: #cde1f8;
+     background-color: #0078ff;
+ }
+
+ .sowarkolha:hover i {
+     color: white;
+ }
