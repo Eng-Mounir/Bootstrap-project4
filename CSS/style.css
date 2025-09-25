@@ -107,6 +107,20 @@ img{
 .about-section .left-content img{
     width: 100%;
 }
+.about-section .left-content{
+    padding: 0 0 0 30px;
+}
+.left-content:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
 .about-section .right-content h3 {
     font-weight: 800;
     margin-bottom: 5px;
