@@ -382,7 +382,7 @@ img{
 /*End testimonial*/
 /*Start analysis-section*/
 .analysis-section {
-    min-height: 420px;
+    min-height: 350px;
     width: 100%;
 }
 .analysis-section .counter-icon a i{
@@ -399,4 +399,64 @@ img{
     font-size: 15px;
     color: #748182;
     font-weight: 600;
+}
+/*End analysis-section*/
+
+/*start Our-team section*/
+.team-section{
+    background-color:#f7f7f7 ;
+}
+.team-section .card-item {
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.team-section .card-item img {
+    transition: all ease-in 500ms;
+}
+
+.team-section .card-item .layer {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all ease-in 400ms;
+    position: absolute;
+    inset: 10px;
+    opacity: 0;
+    transform-origin: center center;
+
+    transform: scale(0) rotateY(0deg);
+}
+/*to apply on both card-text area and the card-item area*/
+.team-section .card-wrapper:hover .layer {
+    opacity: 1;
+    transform: scale(1) rotateY(360deg);
+    transform: center center;
+}
+
+
+.team-section .card-item:hover img {
+    transform: scale(1.2);
+
+}
+
+/*for buttons inside the layer*/
+.team-section .card-item .icon i {
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    color: white;
+    transition: all ease-in 0.3s;
+    padding: 10px;
+    border: 2px solid transparent;
+    font-size: 20px;
+}
+
+.team-section .card-item .icon i:hover {
+    background-color: white;
+    color: black;
+    border-color: #1c1c1c;
+}
+
+.team-section .card-text{
+    background-color: rgba(52, 52, 52, .8);
+    transition: all ease-in 400ms;
 }
