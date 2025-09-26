@@ -9,8 +9,7 @@ section {
 }
 html{
     scroll-behavior: smooth;
-    height: 500%;
-
+    height: 900%;
 }
 a,span{
     display: inline-block;
@@ -321,3 +320,63 @@ img{
 }
 /*end of buttons indise the layer*/
 /*End portfolio*/
+
+
+/*Start Testonomial section*/
+/*Start seperatedd part*/
+/* === Circular Indicators === */
+#carouselExampleCaptions {
+    margin-top: 0;
+    padding-top: 0;
+}
+.Testimonial-section{
+    background-color: #f7f7f7;
+}
+#carouselExampleCaptions .carousel-indicators .btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+.carousel-item .image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+            /* keep it circular */
+    transition: transform 0.4s ease;
+}
+
+/* Captions centered but let Bootstrap handle item positioning */
+.carousel-caption {
+    position: static;
+    text-align: center;
+    padding: 0;
+}
+.carousel-caption p {
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+}
+.carousel-caption h6 {
+    margin: 30px 0 5px;
+    color: #343434;
+}
+.carousel-caption span {
+    color: #888;
+    margin-bottom: 30px;
+}
+.carousel-content {
+    height: 60vh;
+}
