@@ -9,7 +9,6 @@ section {
 }
 html{
     scroll-behavior: smooth;
-    height: 900%;
 }
 a,span{
     display: inline-block;
@@ -379,4 +378,25 @@ img{
 }
 .carousel-content {
     height: 60vh;
+}
+/*End testimonial*/
+/*Start analysis-section*/
+.analysis-section {
+    min-height: 420px;
+    width: 100%;
+}
+.analysis-section .counter-icon a i{
+    font-size: 200;
+}
+.analysis-section .counter-text h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.analysis-section .counter-text p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-weight: 600;
 }
