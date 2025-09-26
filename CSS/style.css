@@ -499,3 +499,13 @@ img{
                 margin: 0;
                 font-size: 15px;
  }
+/*end of conact section*/
+
+/*start footer section*/
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p{
+    color: #748182;
+}
