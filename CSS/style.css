@@ -53,6 +53,7 @@ img{
     background-position: center;
     
  }
+
 /*Starting NavBar*/
 .navbar .container .logo {
     font-weight: 800;
@@ -460,3 +461,41 @@ img{
     background-color: rgba(52, 52, 52, .8);
     transition: all ease-in 400ms;
 }
+/*End of team section*/
+
+/*Start Contact Section*/
+#floatingTextarea {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+}
+.form-control {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-submit .btn{
+    background-color: #1c1c1c;
+    border: 2px solid black;
+    color: white;
+    transition: all ease-in 0.3s;
+    padding: 10px 40px;
+}
+
+.contact-submit .btn:hover {
+    background-color: white;
+    color: black;
+    border-color: #1c1c1c;
+}
+/*it took the properity from the services section (icon-container)*/
+ .icon-content:hover .icon-container {
+     background-color: #1c1c1c;
+     color: #fff;
+ }
+ .contact-section .icon-text p{
+        color: #748182;
+            line-height: 1.6;
+                margin: 0;
+                font-size: 15px;
+ }

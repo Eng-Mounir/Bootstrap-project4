@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#NavSpy">
+<body data-bs-spy="scroll" data-bs-target="#ScrollSpy">
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="NavSpy">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="ScrollSpy">
             <div class="container py-2">
                 <!-- logo -->
                 <a class="logo navbar-brand fs-5 text-black text-uppercase" href="#Daniels">Daniels</a>
@@ -870,7 +870,88 @@
         </section>
 
 
+        <section class="contact-section py-5" id="contact">
+            <div class="container">
+                <div class="Title text-center">
+                    <h3 class="section-head mt-3 mb-5">Contact Us.</h3>
+                </div>
+                <div class="contact-icon p-3 mb-5">
+                    <div class="row">
 
+                        <div class="icon-content col-4 d-flex justify-content-center">
+                            <div class="icon-wrapper d-flex flex-column align-items-center text-center">
+                                <div
+                                    class="icon-container rounded-circle d-flex justify-content-center align-items-center fs-3 mb-2">
+                                    <i class="fa-solid fa-paper-plane fa-1x"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h6 class="fw-bold">Address</h6>
+                                    <p>6834 Hollywood Blvd - Los Angeles CA Email</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-content col-4 d-flex justify-content-center">
+                            <div class="icon-wrapper d-flex flex-column align-items-center text-center">
+                                <div
+                                    class="icon-container rounded-circle d-flex justify-content-center align-items-center fs-3 mb-2">
+                                    <i class="fa-solid fa-envelope fa-1x"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h6 class="fw-bold">Email</h6>
+                                    <p>Support@website.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-content col-4 d-flex justify-content-center">
+                            <div class="icon-wrapper d-flex flex-column align-items-center text-center">
+                                <div
+                                    class="icon-container rounded-circle d-flex justify-content-center align-items-center fs-3 mb-2">
+                                    <i class="fa-solid fa-phone fa-1x"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h6 class="fw-bold">Phone</h6>
+                                    <p>+20 010 2517 8918</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="data-area">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Mounir">
+                                <label for="floatingName">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingEmail"
+                                    placeholder="name@example.com">
+                                <label for="floatingEmail">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-submit mt-4">
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Bootstrap JS -->
     <script src="JS/bootstrap.bundle.js"></script>
