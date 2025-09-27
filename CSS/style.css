@@ -108,14 +108,19 @@ img{
     font-weight: 800;
     margin-bottom: 10px;
 }
+
 .home-section .container .home-text h1{
     font-weight: 200;
     font-size: 6rem;
 }
-.home-section .home-text h1 span {
-    font-weight: 50;
-    font-size: 5rem;
+.home-section .home-text h1 span:first-child {
+    font-weight: 300;
+    font-size: 3rem;
     opacity: 0.7;
+}
+.home-section .home-text h1 span {
+    font-weight: 500;
+    font-size: 4rem;
 }
 .social-icons a i{
     background-color: rgba(0, 0, 0, 0.3);
@@ -509,3 +514,4 @@ footer {
 footer p{
     color: #748182;
 }
+/*end of footer section*/

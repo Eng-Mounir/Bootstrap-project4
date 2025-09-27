@@ -20,10 +20,10 @@
 
 <body data-bs-spy="scroll" data-bs-target="#ScrollSpy">
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="ScrollSpy">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top bg-transparent" id="ScrollSpy">
             <div class="container py-2">
                 <!-- logo -->
-                <a class="logo navbar-brand fs-5 text-black text-uppercase" href="#Daniels">Daniels</a>
+                <a class="logo navbar-brand fs-5 text-white text-uppercase" href="#Daniels">Daniels</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -60,9 +60,11 @@
             <div class="container">
                 <div
                     class="home-content vh-100 d-flex justify-content-center align-items-center flex-column text-center text-white">
-                    <div class="home-text mb-4">
+                    <div class="home-text mb-4 w-100 mx-auto">
                         <h5 class="fs-50">Hello</h5>
-                        <h1><span>I Am</span></h1>
+                        <h1><span>I Am</span>
+                            <span id="element"></span>
+                        </h1>
                     </div>
                     <div class="social-icons">
                         <a href=""><i class="fa-brands fa-facebook rounded-circle"></i></a>
@@ -876,9 +878,9 @@
                     <h3 class="section-head mt-3 mb-5">Contact Us.</h3>
                 </div>
                 <div class="contact-icon p-3 mb-5">
-                    <div class="row">
+                    <div class="row g-3">
 
-                        <div class="icon-content col-4 d-flex justify-content-center">
+                        <div class="icon-content col-12 col-md-4  d-flex justify-content-center">
                             <div class="icon-wrapper d-flex flex-column align-items-center text-center">
                                 <div
                                     class="icon-container rounded-circle d-flex justify-content-center align-items-center fs-3 mb-2">
@@ -891,7 +893,7 @@
                             </div>
                         </div>
 
-                        <div class="icon-content col-4 d-flex justify-content-center">
+                        <div class="icon-content col-12 col-md-4 d-flex justify-content-center">
                             <div class="icon-wrapper d-flex flex-column align-items-center text-center">
                                 <div
                                     class="icon-container rounded-circle d-flex justify-content-center align-items-center fs-3 mb-2">
@@ -904,7 +906,7 @@
                             </div>
                         </div>
 
-                        <div class="icon-content col-4 d-flex justify-content-center">
+                        <div class="icon-content col-12 col-md-4 d-flex justify-content-center">
                             <div class="icon-wrapper d-flex flex-column align-items-center text-center">
                                 <div
                                     class="icon-container rounded-circle d-flex justify-content-center align-items-center fs-3 mb-2">
@@ -922,14 +924,14 @@
 
 
                 <div class="data-area">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingName" placeholder="Mounir">
                                 <label for="floatingName">Name</label>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingEmail"
                                     placeholder="name@example.com">
@@ -959,6 +961,21 @@
             <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Developer', 'Designer', 'Larry Daniels'],
+            typeSpeed: 100,   
+            backSpeed: 60,    
+            loop: true,
+            smartBackspace: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+    </script>
+
     <!-- Bootstrap JS -->
     <script src="JS/bootstrap.bundle.js"></script>
 </body>
